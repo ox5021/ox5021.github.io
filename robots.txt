@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ox5021.github.io/sitemap.xml
