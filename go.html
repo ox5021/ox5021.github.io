@@ -1,0 +1,20 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex">
+<title>카카오톡 선물하기로 이동 | GIFT PICK</title>
+<meta property="og:title" content="카카오톡 선물하기 바로가기"><meta property="og:site_name" content="GIFT PICK">
+<style>body{font-family:-apple-system,'Pretendard',sans-serif;text-align:center;padding:60px 20px;color:#222}
+a{display:inline-block;margin-top:16px;padding:14px 28px;background:#222;color:#fff;border-radius:8px;text-decoration:none}</style>
+</head><body class="gp-go"><p>카카오톡 선물하기로 이동하고 있어요…</p><a id="go" href="./">바로 이동하기</a>
+<script>(function(){
+var h=location.hash.slice(1),u="";
+try{h=h.replace(/-/g,"+").replace(/_/g,"/");while(h.length%4)h+="=";
+u=decodeURIComponent(escape(atob(h)));}catch(e){}
+var ok=false;try{var x=new URL(u);ok=/^https?:$/.test(x.protocol)&&new RegExp("(^|\\.)(kakao\\.com|kko\\.to|kakao\\.co\\.kr|coupang\\.com)$").test(x.hostname);}catch(e){}
+if(!ok){location.replace("./");return;}
+document.getElementById("go").href=u;
+var q=new URLSearchParams(location.search),hook="https://script.google.com/macros/s/AKfycbwL82rGpMU-4jVP2JUxEblHCBQLf9OwYsk8ggub8qx3hGZpBPlGak7eQyvsTC5oAs0/exec";
+if(hook){try{var t=hook+"?click=1&ch="+encodeURIComponent(q.get("c")||"")+"&i="+encodeURIComponent(q.get("i")||"")
++"&u="+encodeURIComponent(u.slice(0,300))+"&r="+encodeURIComponent((document.referrer||"").slice(0,200));
+if(navigator.sendBeacon&&navigator.sendBeacon(t)){}else{fetch(t,{mode:"no-cors",keepalive:true});}}catch(e){}}
+setTimeout(function(){location.replace(u);},150);
+})();</script></body></html>
